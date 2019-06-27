@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\msi\documents\visual studio 2017\projects\customexceptions\customexceptions\source.cpp(17): warning C4290: C++ exception specification ignored except to indicate a function is not __declspec(nothrow)
+  CustomExceptions.vcxproj -> C:\Users\MSI\Documents\Visual Studio 2017\Projects\CustomExceptions\Debug\CustomExceptions.exe
