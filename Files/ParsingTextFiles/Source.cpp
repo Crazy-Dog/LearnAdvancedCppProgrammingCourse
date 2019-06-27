@@ -24,7 +24,7 @@ int main()
 		int population;
 		input >> population;
 
-		input >> ws;
+		input >> ws; //delete whitespaces and hidden "new line" characters
 
 		cout << "'" << line << "' -- '" << population << "'" << endl;
 	}
