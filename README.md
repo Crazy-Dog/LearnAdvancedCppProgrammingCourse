@@ -1,1 +1,1 @@
-# LearnAdvancedCppProgrammingCourse
+# LearnAdvancedCppProgrammingCourse - it's more intermediate then advanced
