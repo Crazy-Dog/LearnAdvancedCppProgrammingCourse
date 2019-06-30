@@ -23,6 +23,10 @@ namespace myComplex
 		{
 			return imaginary;
 		}
+
+		bool operator==(const Complex &complex) const;
+		bool operator!=(const Complex &complex) const;
+		Complex operator*() const;
 	};
 
 	Complex operator+(const Complex & complex1, const Complex & complex2);

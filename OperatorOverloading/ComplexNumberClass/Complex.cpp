@@ -24,6 +24,18 @@ namespace myComplex
 
 		return *this;
 	}
+	bool Complex::operator==(const Complex & complex) const
+	{
+		return (complex.real == real) && (complex.imaginary == imaginary);
+	}
+	bool Complex::operator!=(const Complex & complex) const
+	{
+		return !(*this == complex);
+	}
+	Complex Complex::operator*() const
+	{
+		return Complex(real, -imaginary);
+	}
 	Complex operator+(const Complex & complex1, const Complex & complex2)
 	{
 		return Complex(complex1.getReal() + complex2.getReal(), 

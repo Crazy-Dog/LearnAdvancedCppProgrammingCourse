@@ -10,6 +10,9 @@ int main()
 	cout << complex3 << endl;
 	cout << complex2 << endl;
 
+	cout << (complex2 != complex1 ? "Not equal" : "equal") << endl;
+	cout << *complex2 << endl;
+
 	getchar();
 	return 0;
 }
