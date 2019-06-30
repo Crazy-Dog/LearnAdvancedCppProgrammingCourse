@@ -14,7 +14,6 @@ namespace myComplex
 		Complex(double real, double imaginary);
 		Complex(const Complex &complex);
 		const Complex &operator=(const Complex &complex);
-		friend ostream &operator<<(ostream &, const Complex &);
 
 		double getReal() const
 		{
@@ -25,4 +24,9 @@ namespace myComplex
 			return imaginary;
 		}
 	};
+
+	Complex operator+(const Complex & complex1, const Complex & complex2);
+	Complex operator+(const Complex & complex, double d);
+	Complex operator+(double d, const Complex & complex);
+	ostream &operator<<(ostream &, const Complex &);
 }

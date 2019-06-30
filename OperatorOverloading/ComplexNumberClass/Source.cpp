@@ -3,9 +3,12 @@
 int main()
 {
 	myComplex::Complex complex1(20, 19);
-	myComplex::Complex complex2 = complex1;
+	myComplex::Complex complex2(2, 3);
+	myComplex::Complex complex3 = complex1 + complex2;
+	complex2 = complex2 + 2;
 
-	cout << complex1 << endl;
+	cout << complex3 << endl;
+	cout << complex2 << endl;
 
 	getchar();
 	return 0;

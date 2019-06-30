@@ -24,9 +24,22 @@ namespace myComplex
 
 		return *this;
 	}
+	Complex operator+(const Complex & complex1, const Complex & complex2)
+	{
+		return Complex(complex1.getReal() + complex2.getReal(), 
+			complex1.getImaginary() + complex2.getImaginary());
+	}
+	Complex operator+(const Complex & complex, double d)
+	{
+		return Complex(d + complex.getReal(), complex.getImaginary());
+	}
+	Complex operator+(double d, const Complex & complex)
+	{
+		return Complex(d + complex.getReal(), complex.getImaginary());
+	}
 	ostream & operator<<(ostream &os, const Complex &complex)
 	{
-		os << "(" << complex.real << "," << complex.imaginary << ")";
+		os << "(" << complex.getReal() << "," << complex.getImaginary() << ")";
 		return os;
 	}
 }
